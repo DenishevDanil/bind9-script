@@ -26,7 +26,7 @@ while true
       break
     fi
   fi
-  echo "Error: Enter a valid IP addres (for example, 192.168.0.50)"
+  echo "Error: Enter a valid IP address (for example, 192.168.0.50)"
 done
 
 dir="$(dirname "$(readlink -f "$0")")"
@@ -44,4 +44,4 @@ echo $newserial > $dir/serial
 
 systemctl restart bind9
 
-echo "Comlete!"
+echo "Comleted!"
